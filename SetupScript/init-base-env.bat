@@ -1,10 +1,10 @@
 @echo off
 
 echo --------------------------------
-echo  ~/binãƒ•ã‚©ãƒ«ãƒ€ã‚’PATHã«è¿½åŠ ã™ã‚‹
+echo  ~/binƒtƒHƒ‹ƒ_‚ðPATH‚É’Ç‰Á‚·‚é
 echo --------------------------------
 
-echo ç¾åœ¨ã®PATH
+echo Œ»Ý‚ÌPATH
 echo %PATH%
 
 setx PATH "%PATH%;%USERPROFILE%\bin;"
