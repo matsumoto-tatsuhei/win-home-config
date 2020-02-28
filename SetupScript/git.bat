@@ -1,10 +1,18 @@
 @echo off
-echo gitのセットアップ
 
+echo --------------------------------
+echo  gitのセットアップ
+echo --------------------------------
+
+rem --------------------------------
+rem  基本設定
+rem
 set BIN=%USERPROFILE%\bin
+set INSTALL_FOLDER=%USERPROFILE%\bin\git
 
-echo git.exeにpathを通す
-cmd /c %BIN%\tools\setenv.bat "add" "PATH" "%BIN%\git\cmd"
+rem  --------------------------------
+echo  git.exeにpathを通す
+rem
+setx PATH "%PATH%;%INSTALL_FOLDER%\cmd;"
 
-echo gitkをランチャーに追加
-cmd /c %BIN%\tools\mksc.bat "%BIN%\gitk.lnk" "%BIN%\git\cmd\gitk.exe"
+pause
